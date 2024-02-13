@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background-color: #232c46;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+h5 {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+h6 {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+code {
+  font-size: 1.2em;
+}
+
+ul, ol {
+  padding-inline-start: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.square {
+  width: 68px;
+  height: 68px;
+  background: #f6f6f6;
+  padding: 0;
+  border: 1px solid #999;
+  border-radius: 4px;
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 34px;
+  text-align: center;
+}
+
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.game-status {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #3f4e6b;
+  border-radius: 8px;
+}
+
+.game-status .status-icon {
+  margin: 0;
+  font-size: 32px;
+}
+
+.game-status .status-info p{
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #f6f6f6;
+}
+
+.status-info p.status-title{
+  margin-bottom: 4px;
+  font-size: 10px;
+  font-weight: 900; 
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.game-board {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 16px;
+  border-radius: 8px;
+  align-self: center;
+  background: #3f4e6b;
+}
+
+.reset-game {
+  width: 100%;
+  padding: 8px 12px;
+  background: transparent;
+  border: 1px solid #3f4e6b;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #f6f6f6;
+  transition: background-color, border-color, .25s;
+}
+
+.reset-game:hover {
+  cursor: pointer;
+  background-color: #3f4e6b;
+  border-color: #f6f6f6;
+}
+
+.reset-game {
+  width: 100%;
+  padding: 8px 12px;
+  background: transparent;
+  border: 1px solid #3f4e6b;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #f6f6f6;
+}
